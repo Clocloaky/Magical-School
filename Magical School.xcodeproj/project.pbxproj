@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC6CB0D72739E9E50063C042 /* PetFamiliarMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6CB0D62739E9E50063C042 /* PetFamiliarMenuView.swift */; };
 		FC8C1288272FB41A00DA68B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8C1287272FB41A00DA68B1 /* AppDelegate.swift */; };
 		FC8C128A272FB41A00DA68B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8C1289272FB41A00DA68B1 /* SceneDelegate.swift */; };
 		FC8C128C272FB41A00DA68B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8C128B272FB41A00DA68B1 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC6CB0D62739E9E50063C042 /* PetFamiliarMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetFamiliarMenuView.swift; sourceTree = "<group>"; };
 		FC8C1284272FB41A00DA68B1 /* Magical School.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Magical School.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC8C1287272FB41A00DA68B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC8C1289272FB41A00DA68B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				FC8C1287272FB41A00DA68B1 /* AppDelegate.swift */,
 				FC8C1289272FB41A00DA68B1 /* SceneDelegate.swift */,
 				FC8C128B272FB41A00DA68B1 /* ViewController.swift */,
+				FC6CB0D62739E9E50063C042 /* PetFamiliarMenuView.swift */,
 				FC8C128D272FB41A00DA68B1 /* Main.storyboard */,
 				FC8C1290272FB41D00DA68B1 /* Assets.xcassets */,
 				FC8C1292272FB41D00DA68B1 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				FC8C128C272FB41A00DA68B1 /* ViewController.swift in Sources */,
 				FC8C1288272FB41A00DA68B1 /* AppDelegate.swift in Sources */,
+				FC6CB0D72739E9E50063C042 /* PetFamiliarMenuView.swift in Sources */,
 				FC8C128A272FB41A00DA68B1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
