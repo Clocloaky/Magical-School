@@ -140,16 +140,24 @@
             </objects>
             <point key="canvasLocation" x="-152" y="851"/>
         </scene>
-        <!--View Controller-->
+        <!--Student Profile Creation-->
         <scene sceneID="Y4j-v3-FCI">
             <objects>
-                <viewController id="8JS-YP-OBO" sceneMemberID="viewController">
+                <viewController id="8JS-YP-OBO" customClass="StudentProfileCreation" customModule="Magical_School" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Wz-7M-nPh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6GY-5j-2e4">
+                                <rect key="frame" x="87" y="88.5" width="240" height="239"/>
+                                <color key="tintColor" red="0.72263601040000003" green="0.39473400549999998" blue="0.52036811100000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Um9-Ac-vkq"/>
+                                    <constraint firstAttribute="height" constant="240" id="X2F-RG-nDO"/>
+                                </constraints>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="gIN-sD-3BM">
-                                <rect key="frame" x="10" y="374" width="394" height="255"/>
+                                <rect key="frame" x="10" y="374" width="394" height="330"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="2HQ-Cc-bf0">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
@@ -224,24 +232,66 @@
                                             </button>
                                         </subviews>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ssS-Gn-ckH">
+                                        <rect key="frame" x="0.0" y="300" width="394" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Familiar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BS6-eG-t69">
+                                                <rect key="frame" x="0.0" y="0.0" width="197" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiZ-Rj-Z1Q">
+                                                <rect key="frame" x="197" y="0.0" width="197" height="30"/>
+                                                <color key="backgroundColor" red="0.72263601040000003" green="0.39473400549999998" blue="0.52036811100000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6GY-5j-2e4">
-                                <rect key="frame" x="87" y="88.5" width="240" height="239"/>
-                                <color key="tintColor" red="0.72263601040000003" green="0.39473400549999998" blue="0.52036811100000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGX-Of-NT7">
+                                <rect key="frame" x="33" y="196.5" width="46" height="23"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="Um9-Ac-vkq"/>
-                                    <constraint firstAttribute="height" constant="240" id="X2F-RG-nDO"/>
+                                    <constraint firstAttribute="width" constant="46" id="47f-je-dn4"/>
+                                    <constraint firstAttribute="height" constant="27.5" id="s4K-ax-Pom"/>
                                 </constraints>
-                            </imageView>
+                                <color key="tintColor" red="0.72263601040000003" green="0.39473400549999998" blue="0.52036811100000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" backgroundImage="arrowtriangle.left.fill" catalog="system">
+                                    <color key="titleColor" red="0.72263601040000003" green="0.39473400549999998" blue="0.52036811100000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EjD-EK-OYN">
+                                <rect key="frame" x="335" y="196.5" width="46" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27.5" id="2iI-UD-Wrk"/>
+                                    <constraint firstAttribute="width" constant="46" id="tYv-2N-W8p"/>
+                                </constraints>
+                                <color key="tintColor" red="0.72263601040000003" green="0.39473400549999998" blue="0.52036811100000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" backgroundImage="arrowtriangle.right.fill" catalog="system">
+                                    <color key="titleColor" red="0.72263601040000003" green="0.39473400549999998" blue="0.52036811100000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.90821478115091858" blue="0.85642162866673932" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="6GY-5j-2e4" firstAttribute="leading" secondItem="GGX-Of-NT7" secondAttribute="trailing" constant="8" id="1ed-jJ-u8q"/>
                             <constraint firstItem="6GY-5j-2e4" firstAttribute="top" secondItem="F1b-OU-Ac4" secondAttribute="top" id="3VN-Vf-e70"/>
                             <constraint firstItem="F1b-OU-Ac4" firstAttribute="trailing" secondItem="gIN-sD-3BM" secondAttribute="trailing" constant="10" id="3x4-UN-YT0"/>
+                            <constraint firstItem="6GY-5j-2e4" firstAttribute="leading" secondItem="GGX-Of-NT7" secondAttribute="trailing" constant="8" id="53O-jo-jyE"/>
+                            <constraint firstItem="EjD-EK-OYN" firstAttribute="centerY" secondItem="6GY-5j-2e4" secondAttribute="centerY" id="7Mu-QR-VEJ"/>
+                            <constraint firstItem="EjD-EK-OYN" firstAttribute="firstBaseline" secondItem="GGX-Of-NT7" secondAttribute="firstBaseline" id="8Fb-T6-Yjb"/>
+                            <constraint firstItem="EjD-EK-OYN" firstAttribute="bottom" secondItem="GGX-Of-NT7" secondAttribute="bottom" id="9XP-Mf-Udb"/>
+                            <constraint firstItem="EjD-EK-OYN" firstAttribute="baseline" secondItem="GGX-Of-NT7" secondAttribute="baseline" id="GsA-mP-BKn"/>
                             <constraint firstItem="gIN-sD-3BM" firstAttribute="top" secondItem="6GY-5j-2e4" secondAttribute="bottom" constant="46" id="QqT-Ft-VZb"/>
                             <constraint firstItem="F1b-OU-Ac4" firstAttribute="trailing" secondItem="6GY-5j-2e4" secondAttribute="trailing" constant="87" id="WAv-Zu-FOJ"/>
+                            <constraint firstItem="EjD-EK-OYN" firstAttribute="top" secondItem="GGX-Of-NT7" secondAttribute="top" id="kdu-bj-je2"/>
                             <constraint firstItem="6GY-5j-2e4" firstAttribute="leading" secondItem="F1b-OU-Ac4" secondAttribute="leading" constant="87" id="qyc-OX-f9E"/>
+                            <constraint firstItem="EjD-EK-OYN" firstAttribute="leading" secondItem="6GY-5j-2e4" secondAttribute="trailing" constant="8" id="rfN-3S-JlQ"/>
+                            <constraint firstItem="EjD-EK-OYN" firstAttribute="leading" secondItem="6GY-5j-2e4" secondAttribute="trailing" constant="8" id="rsE-JH-eW1"/>
+                            <constraint firstItem="GGX-Of-NT7" firstAttribute="leading" secondItem="F1b-OU-Ac4" secondAttribute="leading" constant="33" id="sSQ-7U-QWr"/>
                             <constraint firstItem="gIN-sD-3BM" firstAttribute="leading" secondItem="F1b-OU-Ac4" secondAttribute="leading" constant="10" id="tZR-LH-m80"/>
                             <constraint firstItem="F1b-OU-Ac4" firstAttribute="bottom" secondItem="gIN-sD-3BM" secondAttribute="bottom" constant="10" id="xoO-CH-B2U"/>
                         </constraints>
@@ -559,6 +609,8 @@
     </scenes>
     <resources>
         <image name="Background" width="1920" height="1080"/>
+        <image name="arrowtriangle.left.fill" catalog="system" width="64" height="56"/>
+        <image name="arrowtriangle.right.fill" catalog="system" width="64" height="56"/>
         <image name="person.crop.circle" catalog="system" width="64" height="60"/>
     </resources>
 </document>
