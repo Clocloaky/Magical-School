@@ -517,13 +517,6 @@
                     <view key="view" contentMode="scaleToFill" id="6S4-5k-hgs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUw-pM-xgb">
-                                <rect key="frame" x="323" y="756" width="41" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Finish"/>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" red="0.99982708692550659" green="0.90706521272659302" blue="0.85096830129623413" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="jLq-xO-MDV"/>
                     </view>
@@ -540,7 +533,7 @@
                     <view key="view" contentMode="scaleToFill" id="rVf-BI-SSU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.99982708689999999" green="0.90706521269999996" blue="0.85096830130000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="KD0-JS-QBO"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="nQG-lO-5nD"/>
