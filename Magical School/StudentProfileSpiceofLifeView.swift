@@ -8,98 +8,58 @@
 
 import UIKit
 
-class ChecklistItem {
-    let title: String
+class characterTraits {
+    var sectionName: String?
+    var listOfTraits: [String]?
     var isChecked: Bool = false
     
-    init(title: String){
-        self.title = title
+    init(sectionName: String, listOfTraits: [String]) {
+        self.sectionName = sectionName
+        self.listOfTraits = listOfTraits
     }
 }
 
-    public var traitsArray : [String] = []
-
-class StudentProfileSpiceofLife: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class CharacterCreationTraitsViewController: UIViewController{
+    @IBOutlet weak var traitsTableView: UITableView!
+    var yourTraits = [characterTraits]()
     
-
     
-    let items: [ChecklistItem] = [
-        "I love to draw and paint",
-        "I love animals and think they're cute",
-        "I'm always up to date with the latest fashion",
-        "I'm a night owl",
-        "I love waking with the sun",
-        "I am a people person",
-        "Reading is fun",
-        "Going out is fun"
-        ].compactMap({
-            ChecklistItem(title: $0)
-        })
-    
-    private let tableView: UITableView = {
-        let table = UITableView(frame: .zero, style: .grouped)
-        table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        return table
-    }()
-    
-    override func viewDidLoad() {
+    override func viewDidLoad(){
         super.viewDidLoad()
-        view.addSubview(tableView)
-        tableView.delegate = self
-        tableView.dataSource = self
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        tableView.frame = view.bounds
-    }
-    
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
-        if (section == 0){
-            return "Pick you traits"
-        }
-        if (section == 1){
-            return "This is the first section"
-        }
-        
-        return "Default return"
+        yourTraits.append(characterTraits.init(sectionName: "How would you describe yourself?", listOfTraits: ["Shy", "Kind", "Pretty", "Cunning", "Intelligent", "Brave"]))
+        yourTraits.append(characterTraits.init(sectionName: "Which item appeals to you?", listOfTraits: ["Needle", "Diary", "Chocolate", "Roses", "Guitar", "Doll", "Necklace"]))
+        yourTraits.append(characterTraits.init(sectionName: "What are you afraid of?", listOfTraits: ["Heights", "Ghosts", "Nothing :)", "Spiders", "The Dark"]))
     }
-    //table
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
-    }
+}
+
+extension CharacterCreationTraitsViewController: UITableViewDataSource, UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return yourTraits.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return yourTraits[section].listOfTraits?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let item = items[indexPath.row]
+        let item = yourTraits[indexPath.section]
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = item.title
-        
+        cell.textLabel?.text = item.listOfTraits?[indexPath.row]
         cell.accessoryType = item.isChecked ? .checkmark : .none
         return cell
     }
     
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return yourTraits[section].sectionName
+    }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let item = items[indexPath.row]
+        let item = yourTraits[indexPath.row]
         item.isChecked = !item.isChecked
         tableView.reloadRows(at: [indexPath], with: .automatic)
-        //figure out how to save checked items
-        traitsArray.removeAll()
-        for each in 0...items.count-1 {
-            if items[each].isChecked {
-                traitsArray.append(items[each].title)
-            }
-        }
-        print(traitsArray)
     }
-    
-    
 }
-
 
