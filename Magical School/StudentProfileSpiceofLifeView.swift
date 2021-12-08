@@ -55,23 +55,11 @@ class StudentProfileSpiceofLife: UIViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        
-        if (section == 0){
-            return "Pick you traits"
-        }
-        if (section == 1){
-            return "This is the first section"
-        }
-        
-        return "Default return"
+        return "Select some traits."
     }
     //table
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
-    }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
