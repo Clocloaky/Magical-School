@@ -16,18 +16,20 @@ class StudentProfileSpiceofLife: UIViewController {
     public var traitsArray: [String] = []
     
     let traitData = [
-        ["apple", "oranges", "grapes"],
-        ["Shy", "Kind", "Brave", "Cunning"],
-        ["Yes", "No"]
+        ["Shy", "Kind", "Smart", "Cunning", "Pretty"],
+        ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        ["Library", "Home", "Cafe", "Park", "Closet", "I don't study lol"],
+        ["Eating", "Sleeping", "Drawing", "Playing Music", "Dancing", "Exercising"]
     ]
     
     var traitFlags = [
-        [false, false, false],
-        [false, false, false, false],
-        [false, false]
+        [false, false, false, false, false],
+        [false, false, false, false, false, false, false],
+        [false, false, false, false, false, false],
+        [false, false, false, false, false, false]
     ]
     
-    let traitSectionData = ["Question 1", "Question 2", "Question 3"]
+    let traitSectionData = ["How would you describe yourself?", "What is your favorite day of the week?", "Where do you like to study?", "What is your favorite past time?"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,14 +39,6 @@ class StudentProfileSpiceofLife: UIViewController {
 }
 
 extension StudentProfileSpiceofLife: UITableViewDelegate{
-    
-    /*  - (NSIndexPath*)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath*)indexPath {
-     for ( NSIndexPath* selectedIndexPath in tableView.indexPathsForSelectedRows ) {
-     if ( selectedIndexPath.section == indexPath.section )
-     [tableView deselectRowAtIndexPath:selectedIndexPath animated:NO] ;
-     }
-     return indexPath ;
-     }*/
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         var sectionAllFalse = true
@@ -67,13 +61,20 @@ extension StudentProfileSpiceofLife: UITableViewDelegate{
             sectionAllFalse = true
         }
         tableView.reloadRows(at: [indexPath], with: .automatic)
-        print(traitFlags[indexPath.section])
         
         
-        
-        //add traits from checked items
-        
+        //adding traits for character stats
+        traitsArray.removeAll()
+        for i in 0...traitData.count-1{
+            for j in 0...traitData[i].count-1{
+                if(traitFlags[i][j] == true){
+                    traitsArray.append(traitData[i][j])
+                }
+            }
+        }
+            print(traitsArray)
     }
+    
 }
 
 extension StudentProfileSpiceofLife: UITableViewDataSource{
@@ -83,7 +84,7 @@ extension StudentProfileSpiceofLife: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 20
+        return 50
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

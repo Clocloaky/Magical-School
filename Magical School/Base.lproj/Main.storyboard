@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -103,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="111.16071428571428"/>
+            <point key="canvasLocation" x="972" y="110"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="HqK-Pu-hq7">
@@ -118,6 +119,7 @@
                     <connections>
                         <segue destination="bKS-lV-mbB" kind="relationship" relationship="viewControllers" id="JT4-Nf-r2K"/>
                         <segue destination="R2F-t3-Spj" kind="relationship" relationship="viewControllers" id="t3a-dG-Ep7"/>
+                        <segue destination="tl2-wQ-VOS" kind="relationship" relationship="viewControllers" id="5Zq-58-wfI"/>
                         <segue destination="t3T-v2-AQc" kind="relationship" relationship="viewControllers" id="gVe-tb-EJo"/>
                     </connections>
                 </tabBarController>
@@ -492,6 +494,23 @@
             </objects>
             <point key="canvasLocation" x="1378" y="850"/>
         </scene>
+        <!--Familiar-->
+        <scene sceneID="5Ld-cd-LaB">
+            <objects>
+                <navigationController id="tl2-wQ-VOS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Familiar" id="yel-ER-gU1"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gWb-3x-SKY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AbX-nH-CXR" kind="relationship" relationship="rootViewController" id="DaF-g9-qXI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v9c-rp-0JU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2135" y="850"/>
+        </scene>
         <!--Confirmation-->
         <scene sceneID="afw-2k-Kti">
             <objects>
@@ -550,6 +569,57 @@
             </objects>
             <point key="canvasLocation" x="1376.8115942028987" y="1550.8928571428571"/>
         </scene>
+        <!--Familiar Collection View Controller-->
+        <scene sceneID="qAn-Iz-EuX">
+            <objects>
+                <collectionViewController restorationIdentifier="familiarCollectionViewController" storyboardIdentifier="familiarCollectionViewController" id="AbX-nH-CXR" customClass="familiarCollectionViewController" customModule="Magical_School" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="lTU-ys-2lW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TyP-kt-4mA">
+                            <size key="itemSize" width="130" height="130"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" reuseIdentifier="Cell" id="1ck-8M-AAk" customClass="familiarCollectionViewCell" customModule="Magical_School" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="GGQ-G9-UFc">
+                                    <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gTS-LO-jXS">
+                                            <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.72263601040000003" green="0.39473400549999998" blue="0.52036811100000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstItem="gTS-LO-jXS" firstAttribute="leading" secondItem="GGQ-G9-UFc" secondAttribute="leading" id="6G6-lZ-tgC"/>
+                                        <constraint firstItem="gTS-LO-jXS" firstAttribute="top" secondItem="GGQ-G9-UFc" secondAttribute="top" id="iY4-bh-4Bd"/>
+                                        <constraint firstAttribute="trailing" secondItem="gTS-LO-jXS" secondAttribute="trailing" id="mCV-rz-S71"/>
+                                        <constraint firstAttribute="bottom" secondItem="gTS-LO-jXS" secondAttribute="bottom" id="tYS-WW-z9e"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="130" height="130"/>
+                                <connections>
+                                    <outlet property="familiarImageView" destination="gTS-LO-jXS" id="qB3-Rn-tZ3"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="AbX-nH-CXR" id="VAQ-AM-PWP"/>
+                            <outlet property="delegate" destination="AbX-nH-CXR" id="21Z-VY-931"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="dwO-0z-a9H"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gcq-TN-Crx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2134.7826086956525" y="1550.8928571428571"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="kd5-P1-sAA">
             <objects>
@@ -565,7 +635,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WVy-CR-ivy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3161" y="834"/>
+            <point key="canvasLocation" x="3212" y="111"/>
         </scene>
         <!--Item-->
         <scene sceneID="hcH-WP-vij">
@@ -582,7 +652,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v6L-to-Syb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3977" y="834"/>
+            <point key="canvasLocation" x="3212" y="850"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="eZl-py-Bcq">
@@ -598,7 +668,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mTt-5Z-T1H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3977" y="1535"/>
+            <point key="canvasLocation" x="3212" y="1551"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pUO-eQ-qn0">

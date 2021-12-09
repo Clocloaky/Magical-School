@@ -16,6 +16,8 @@
 		FC8C128F272FB41A00DA68B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8C128D272FB41A00DA68B1 /* Main.storyboard */; };
 		FC8C1291272FB41D00DA68B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC8C1290272FB41D00DA68B1 /* Assets.xcassets */; };
 		FC8C1294272FB41D00DA68B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8C1292272FB41D00DA68B1 /* LaunchScreen.storyboard */; };
+		FCCBDADE2761AD66001ACF64 /* familiarCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCBDADD2761AD66001ACF64 /* familiarCollectionViewController.swift */; };
+		FCCBDAE02761AFBC001ACF64 /* familiarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCBDADF2761AFBC001ACF64 /* familiarCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		FC8C1290272FB41D00DA68B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC8C1293272FB41D00DA68B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC8C1295272FB41D00DA68B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCCBDADD2761AD66001ACF64 /* familiarCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = familiarCollectionViewController.swift; sourceTree = "<group>"; };
+		FCCBDADF2761AFBC001ACF64 /* familiarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = familiarCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 				FC6CB0D62739E9E50063C042 /* PetFamiliarMenuView.swift */,
 				FC6CB0DA273A05790063C042 /* StudentProfileCreationView.swift */,
 				FC6CB0DC27430C890063C042 /* StudentProfileSpiceofLifeView.swift */,
+				FCCBDADD2761AD66001ACF64 /* familiarCollectionViewController.swift */,
+				FCCBDADF2761AFBC001ACF64 /* familiarCollectionViewCell.swift */,
 				FC8C128D272FB41A00DA68B1 /* Main.storyboard */,
 				FC8C1290272FB41D00DA68B1 /* Assets.xcassets */,
 				FC8C1292272FB41D00DA68B1 /* LaunchScreen.storyboard */,
@@ -149,9 +155,11 @@
 			files = (
 				FC6CB0DD27430C890063C042 /* StudentProfileSpiceofLifeView.swift in Sources */,
 				FC6CB0DB273A05790063C042 /* StudentProfileCreationView.swift in Sources */,
+				FCCBDADE2761AD66001ACF64 /* familiarCollectionViewController.swift in Sources */,
 				FC8C128C272FB41A00DA68B1 /* ViewController.swift in Sources */,
 				FC8C1288272FB41A00DA68B1 /* AppDelegate.swift in Sources */,
 				FC6CB0D72739E9E50063C042 /* PetFamiliarMenuView.swift in Sources */,
+				FCCBDAE02761AFBC001ACF64 /* familiarCollectionViewCell.swift in Sources */,
 				FC8C128A272FB41A00DA68B1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
