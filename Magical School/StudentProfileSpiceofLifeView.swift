@@ -8,86 +8,101 @@
 
 import UIKit
 
-class ChecklistItem {
-    let title: String
-    var isChecked: Bool = false
-    
-    init(title: String){
-        self.title = title
-    }
-}
 
-    public var traitsArray : [String] = []
-
-class StudentProfileSpiceofLife: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class StudentProfileSpiceofLife: UIViewController {
     
-
+    @IBOutlet var tableView: UITableView!
     
-    let items: [ChecklistItem] = [
-        "I love to draw and paint",
-        "I love animals and think they're cute",
-        "I'm always up to date with the latest fashion",
-        "I'm a night owl",
-        "I love waking with the sun",
-        "I am a people person",
-        "Reading is fun",
-        "Going out is fun"
-        ].compactMap({
-            ChecklistItem(title: $0)
-        })
+    public var traitsArray: [String] = []
     
-    private let tableView: UITableView = {
-        let table = UITableView(frame: .zero, style: .grouped)
-        table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        return table
-    }()
+    let traitData = [
+        ["apple", "oranges", "grapes"],
+        ["Shy", "Kind", "Brave", "Cunning"],
+        ["Yes", "No"]
+    ]
+    
+    var traitFlags = [
+        [false, false, false],
+        [false, false, false, false],
+        [false, false]
+    ]
+    
+    let traitSectionData = ["Question 1", "Question 2", "Question 3"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
     }
+}
+
+extension StudentProfileSpiceofLife: UITableViewDelegate{
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        tableView.frame = view.bounds
+    /*  - (NSIndexPath*)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath*)indexPath {
+     for ( NSIndexPath* selectedIndexPath in tableView.indexPathsForSelectedRows ) {
+     if ( selectedIndexPath.section == indexPath.section )
+     [tableView deselectRowAtIndexPath:selectedIndexPath animated:NO] ;
+     }
+     return indexPath ;
+     }*/
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var sectionAllFalse = true
+        //requires a feature to only select one
+        //look through each section
+        //check the flags of each section's array
+        //if one of the flags is true, I change all of the flags to false in that section
+        tableView.deselectRow(at: indexPath, animated: true)
+        //invert the flag
+        for eachFlag in traitFlags[indexPath.section]{
+            if eachFlag == true{
+                sectionAllFalse = false
+                traitFlags[indexPath.section][indexPath.row] = false
+            }
+        }
+        if (!traitFlags[indexPath.section][indexPath.row] && sectionAllFalse){
+            traitFlags[indexPath.section][indexPath.row] = !traitFlags[indexPath.section][indexPath.row]
+        }
+        else{
+            sectionAllFalse = true
+        }
+        tableView.reloadRows(at: [indexPath], with: .automatic)
+        print(traitFlags[indexPath.section])
+        
+        
+        
+        //add traits from checked items
+        
     }
+}
+
+extension StudentProfileSpiceofLife: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Select some traits."
-    }
-    //table
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
+        return traitSectionData[section]
     }
     
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 20
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return traitData.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return traitData[section].count
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let item = items[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = item.title
-        
-        cell.accessoryType = item.isChecked ? .checkmark : .none
+        cell.textLabel?.text = traitData[indexPath.section][indexPath.row]
+        //if the flag is true, put a check mark. Else, take it off if false
+        cell.accessoryType = traitFlags[indexPath.section][indexPath.row] ? .checkmark : .none
+        //cell.backgroundColor = .magenta
         return cell
     }
     
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        let item = items[indexPath.row]
-        item.isChecked = !item.isChecked
-        tableView.reloadRows(at: [indexPath], with: .automatic)
-        //figure out how to save checked items
-        traitsArray.removeAll()
-        for each in 0...items.count-1 {
-            if items[each].isChecked {
-                traitsArray.append(items[each].title)
-            }
-        }
-        print(traitsArray)
-    }
-    
-    
 }
+
 
 
