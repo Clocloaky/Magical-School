@@ -12,7 +12,9 @@ import UIKit
 class PetFamiliarMenu: UIViewController {
     
     
-    @IBOutlet weak var selectingFamiliarBtn: UIButton!
+    
+    
+   /* @IBOutlet weak var selectingFamiliarBtn: UIButton!
     @IBOutlet var selectingFamiliarCollection: [UIButton]!
     var familiarChoice: String? = nil
     
@@ -55,5 +57,5 @@ class PetFamiliarMenu: UIViewController {
                 }
             }
         }
-    }
+    }*/
 }
