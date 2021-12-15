@@ -11,8 +11,32 @@ import UIKit
 
 class PetFamiliarMenu: UIViewController {
     
+    @IBOutlet weak var confirmCharacterImageView: UIImageView!
+    @IBOutlet weak var confirmNameLabel: UILabel!
+    @IBOutlet weak var confirmPronounLabel: UILabel!
+    @IBOutlet weak var confirmBirthdayDateLabel: UILabel!
+    @IBOutlet weak var confirmSignLabel: UILabel!
+    @IBOutlet weak var confirmFamiliarLabel: UILabel!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        confirmCharacterImageView.image = UIImage(systemName: defaultProfile.characterImage)
+        confirmNameLabel.text! = "\(defaultProfile.firstName!) \(defaultProfile.lastName!)"
+        confirmPronounLabel.text! = defaultProfile.pronoun
+        confirmBirthdayDateLabel.text! = defaultProfile.birthdayDate
+        confirmSignLabel.text! = defaultProfile.sign
+        confirmFamiliarLabel.text! = defaultProfile.familiar
+    }
     
+    override func viewWillAppear(_ animated: Bool){
+        confirmCharacterImageView.image = UIImage(systemName: defaultProfile.characterImage)
+        confirmNameLabel.text! = "\(defaultProfile.firstName!) \(defaultProfile.lastName!)"
+        confirmPronounLabel.text! = defaultProfile.pronoun
+        confirmBirthdayDateLabel.text! = defaultProfile.birthdayDate
+        confirmSignLabel.text! = defaultProfile.sign
+        confirmFamiliarLabel.text! = defaultProfile.familiar
+        
+    }
     
    /* @IBOutlet weak var selectingFamiliarBtn: UIButton!
     @IBOutlet var selectingFamiliarCollection: [UIButton]!
