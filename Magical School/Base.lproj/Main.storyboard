@@ -963,36 +963,41 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AgC-Th-RBX">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PinkHeart" translatesAutoresizingMaskIntoConstraints="NO" id="AgC-Th-RBX">
                                 <rect key="frame" x="32" y="286" width="150" height="150"/>
+                                <color key="backgroundColor" red="0.72263601040000003" green="0.39473400549999998" blue="0.52036811100000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="BDF-0i-CkP"/>
                                     <constraint firstAttribute="width" constant="150" id="ZDy-ZQ-HIB"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3oY-OD-q8T">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PinkHeart" translatesAutoresizingMaskIntoConstraints="NO" id="3oY-OD-q8T">
                                 <rect key="frame" x="244" y="286" width="150" height="150"/>
+                                <color key="backgroundColor" red="0.72263601040000003" green="0.39473400549999998" blue="0.52036811100000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="3o3-F7-fLF"/>
                                     <constraint firstAttribute="width" constant="150" id="nVZ-iF-DRH"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wrj-JL-ZPf">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PinkHeart" translatesAutoresizingMaskIntoConstraints="NO" id="wrj-JL-ZPf">
                                 <rect key="frame" x="244" y="515" width="150" height="150"/>
+                                <color key="backgroundColor" red="0.72263601040000003" green="0.39473400549999998" blue="0.52036811100000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="dad-fN-iHJ"/>
                                     <constraint firstAttribute="height" constant="150" id="sSI-c7-CKm"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vJG-GM-cwr">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PinkHeart" translatesAutoresizingMaskIntoConstraints="NO" id="vJG-GM-cwr">
                                 <rect key="frame" x="32" y="515" width="150" height="150"/>
+                                <color key="backgroundColor" red="0.72263601040000003" green="0.39473400549999998" blue="0.52036811100000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="r8c-aU-eIZ"/>
                                     <constraint firstAttribute="width" constant="150" id="u3Y-P9-hSC"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xGP-AQ-8pD">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PinkHeart" translatesAutoresizingMaskIntoConstraints="NO" id="xGP-AQ-8pD">
                                 <rect key="frame" x="132" y="105" width="150" height="150"/>
+                                <color key="backgroundColor" red="0.72263601040000003" green="0.39473400549999998" blue="0.52036811100000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="P1b-Il-3UV"/>
                                     <constraint firstAttribute="height" constant="150" id="WbK-yb-11J"/>
@@ -1220,6 +1225,7 @@
         <image name="Bedroom_Day" width="1920" height="1080"/>
         <image name="CharacterSheetBackground" width="1213" height="874"/>
         <image name="Livingroom_Day" width="1920" height="1080"/>
+        <image name="PinkHeart" width="128" height="128"/>
         <image name="Street_Spring_Day" width="1920" height="1080"/>
         <image name="arrowtriangle.left.fill" catalog="system" width="64" height="56"/>
         <image name="arrowtriangle.right.fill" catalog="system" width="64" height="56"/>
