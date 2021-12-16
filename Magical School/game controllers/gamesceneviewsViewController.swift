@@ -32,6 +32,7 @@ class gamesceneviewsViewController: UIViewController {
     @IBOutlet weak var moneyDisplayLabel: UILabel!
     @IBOutlet weak var stressDisplayLabel: UILabel!
     
+    
     public var characterBaseStat = characterStats(intel: 20, fitness: 20, style: 20, arts: 20, social: 20, charm: 20, money: 100, stress: 0)
     
     override func viewDidLoad() {
@@ -61,20 +62,10 @@ class gamesceneviewsViewController: UIViewController {
         charmDisplayLabel.layer.masksToBounds = true
         charmDisplayLabel.layer.cornerRadius = 10
         
-        
-        
         // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }
