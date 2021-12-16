@@ -20,7 +20,7 @@ class PetFamiliarMenu: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        confirmCharacterImageView.image = UIImage(systemName: defaultProfile.characterImage)
+        confirmCharacterImageView.image = UIImage(named: defaultProfile.characterImage)
         confirmNameLabel.text! = "\(defaultProfile.firstName!) \(defaultProfile.lastName!)"
         confirmPronounLabel.text! = defaultProfile.pronoun
         confirmBirthdayDateLabel.text! = defaultProfile.birthdayDate
@@ -29,7 +29,7 @@ class PetFamiliarMenu: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool){
-        confirmCharacterImageView.image = UIImage(systemName: defaultProfile.characterImage)
+        confirmCharacterImageView.image = UIImage(named: defaultProfile.characterImage)
         confirmNameLabel.text! = "\(defaultProfile.firstName!) \(defaultProfile.lastName!)"
         confirmPronounLabel.text! = defaultProfile.pronoun
         confirmBirthdayDateLabel.text! = defaultProfile.birthdayDate

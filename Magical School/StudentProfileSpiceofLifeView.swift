@@ -8,12 +8,12 @@
 
 import UIKit
 
+var traitsArray: [String] = []
 
 class StudentProfileSpiceofLife: UIViewController {
     
     @IBOutlet var tableView: UITableView!
     
-    public var traitsArray: [String] = []
     
     let traitData = [
         ["Shy", "Kind", "Smart", "Cunning", "Pretty"],

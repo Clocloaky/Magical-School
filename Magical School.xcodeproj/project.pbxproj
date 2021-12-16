@@ -23,7 +23,9 @@
 		FCCBDAE7276AB531001ACF64 /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCBDAE6276AB531001ACF64 /* ClosetViewController.swift */; };
 		FCCBDAE9276AB56D001ACF64 /* NewDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCBDAE8276AB56D001ACF64 /* NewDayViewController.swift */; };
 		FCCBDAEB276AB58F001ACF64 /* SideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCBDAEA276AB58F001ACF64 /* SideBarViewController.swift */; };
-		FCCBDAF2276AC8AB001ACF64 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCBDAF1276AC8AB001ACF64 /* SWRevealViewController.m */; };
+		FCCBDAF7276B087E001ACF64 /* newDayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCBDAF6276B087E001ACF64 /* newDayModel.swift */; };
+		FCCBDAF9276B0EB0001ACF64 /* newDayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCBDAF8276B0EB0001ACF64 /* newDayData.swift */; };
+		FCCBDAFC276B13E8001ACF64 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCBDAFA276B13E8001ACF64 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,8 +47,10 @@
 		FCCBDAE6276AB531001ACF64 /* ClosetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
 		FCCBDAE8276AB56D001ACF64 /* NewDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDayViewController.swift; sourceTree = "<group>"; };
 		FCCBDAEA276AB58F001ACF64 /* SideBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarViewController.swift; sourceTree = "<group>"; };
-		FCCBDAF0276AC8AB001ACF64 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../Downloads/drive-download-20211215T234652Z-001/SWRevealViewController.h"; sourceTree = "<group>"; };
-		FCCBDAF1276AC8AB001ACF64 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../Downloads/drive-download-20211215T234652Z-001/SWRevealViewController.m"; sourceTree = "<group>"; };
+		FCCBDAF6276B087E001ACF64 /* newDayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newDayModel.swift; sourceTree = "<group>"; };
+		FCCBDAF8276B0EB0001ACF64 /* newDayData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newDayData.swift; sourceTree = "<group>"; };
+		FCCBDAFA276B13E8001ACF64 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = ../../../.Trash/SWRevealViewController.m; sourceTree = "<group>"; };
+		FCCBDAFB276B13E8001ACF64 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = ../../../.Trash/SWRevealViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +83,9 @@
 		FC8C1286272FB41A00DA68B1 /* Magical School */ = {
 			isa = PBXGroup;
 			children = (
-				FCCBDAF0276AC8AB001ACF64 /* SWRevealViewController.h */,
-				FCCBDAF1276AC8AB001ACF64 /* SWRevealViewController.m */,
+				FCCBDAFB276B13E8001ACF64 /* SWRevealViewController.h */,
+				FCCBDAFA276B13E8001ACF64 /* SWRevealViewController.m */,
+				FCCBDAF3276B07E2001ACF64 /* where I should have put my data lol */,
 				FCCBDAE5276AB4FC001ACF64 /* game controllers */,
 				FC8C1287272FB41A00DA68B1 /* AppDelegate.swift */,
 				FC8C1289272FB41A00DA68B1 /* SceneDelegate.swift */,
@@ -108,6 +113,15 @@
 				FCCBDAEA276AB58F001ACF64 /* SideBarViewController.swift */,
 			);
 			path = "game controllers";
+			sourceTree = "<group>";
+		};
+		FCCBDAF3276B07E2001ACF64 /* where I should have put my data lol */ = {
+			isa = PBXGroup;
+			children = (
+				FCCBDAF6276B087E001ACF64 /* newDayModel.swift */,
+				FCCBDAF8276B0EB0001ACF64 /* newDayData.swift */,
+			);
+			path = "where I should have put my data lol";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,13 +201,15 @@
 				FC6CB0DB273A05790063C042 /* StudentProfileCreationView.swift in Sources */,
 				FCCBDAE4276AB4F7001ACF64 /* SpellBookViewController.swift in Sources */,
 				FCCBDAE2276AA32F001ACF64 /* gamesceneviewsViewController.swift in Sources */,
+				FCCBDAF7276B087E001ACF64 /* newDayModel.swift in Sources */,
 				FCCBDADE2761AD66001ACF64 /* familiarCollectionViewController.swift in Sources */,
 				FCCBDAE7276AB531001ACF64 /* ClosetViewController.swift in Sources */,
-				FCCBDAF2276AC8AB001ACF64 /* SWRevealViewController.m in Sources */,
 				FCCBDAEB276AB58F001ACF64 /* SideBarViewController.swift in Sources */,
 				FC8C128C272FB41A00DA68B1 /* ViewController.swift in Sources */,
 				FC8C1288272FB41A00DA68B1 /* AppDelegate.swift in Sources */,
+				FCCBDAFC276B13E8001ACF64 /* SWRevealViewController.m in Sources */,
 				FC6CB0D72739E9E50063C042 /* PetFamiliarMenuView.swift in Sources */,
+				FCCBDAF9276B0EB0001ACF64 /* newDayData.swift in Sources */,
 				FCCBDAE02761AFBC001ACF64 /* familiarCollectionViewCell.swift in Sources */,
 				FC8C128A272FB41A00DA68B1 /* SceneDelegate.swift in Sources */,
 			);

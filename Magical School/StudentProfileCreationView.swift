@@ -18,7 +18,7 @@ struct CharacterProfile {
     var familiar: String
 }
 
-var defaultProfile = CharacterProfile(characterImage: "person.crop.circle", firstName: "Mary", lastName: "Loo", pronoun: "She/Her", birthdayDate: "02/14/1111", sign: "The Moon", familiar: "Bobcat")
+var defaultProfile = CharacterProfile(characterImage: "avi4", firstName: "Mary", lastName: "Loo", pronoun: "She/Her", birthdayDate: "02/14/1111", sign: "The Moon", familiar: "Bobcat")
 
 class StudentProfileCreation: UIViewController {
     
@@ -30,11 +30,12 @@ class StudentProfileCreation: UIViewController {
     @IBOutlet weak var signToggleButton: UIButton!
     @IBOutlet weak var famliarToggleButton: UIButton!
     
-    
+    var aviCounter = 0
     var pronounCounter = 0
     var signCounter = 0
     var familiarCounter = 0
     
+    let avatar = ["avi1", "avi2", "avi3", "avi4", "avi5"]
     let prounouns = ["She/Her", "He/Him", "They/Them"]
     let signs = ["The Fool", "The Magician", "High Priestess", "The Empress", "The Emperor", "The Devil", "The Tower", "The Star", "The Moon"]
     let familiars = ["Rat", "Snake", "Cat", "Dog", "Lizard", "Slug", "Slimeball"]
@@ -46,7 +47,7 @@ class StudentProfileCreation: UIViewController {
         firstNameTextField.delegate = self
         lastNameTextField.delegate = self
         birthdayTextField.delegate = self
-        studentPictureImageView.image = UIImage(systemName: "person.crop.circle")
+        studentPictureImageView.image = UIImage(named: "\(avatar[aviCounter])")
         pronounToggleButton.setTitle("\(prounouns[0])", for: . normal)
         signToggleButton.setTitle("\(signs[0])", for: .normal)
         famliarToggleButton.setTitle("\(familiars[0])", for: .normal)
@@ -58,11 +59,24 @@ class StudentProfileCreation: UIViewController {
     
     
     @IBAction func previousPictureButtonPressed(_ sender: UIButton) {
+        if(aviCounter > 0){
+            aviCounter -= 1
+            studentPictureImageView.image = UIImage(named: "\(avatar[aviCounter])")
+        }else{
+            pronounCounter = avatar.count-1
+            studentPictureImageView.image = UIImage(named: "\(avatar[aviCounter])")
+        }
         
     }
     
     @IBAction func nextPictureButtonPressed(_ sender: UIButton) {
-        
+        if(aviCounter < avatar.count-1){
+            aviCounter += 1
+            studentPictureImageView.image = UIImage(named: "\(avatar[aviCounter])")
+        }else{
+            pronounCounter = 0
+            studentPictureImageView.image = UIImage(named: "\(avatar[aviCounter])")
+        }
     }
     
     @IBAction func pronounToggleButtonPressed(_ sender: UIButton) {
@@ -97,6 +111,7 @@ class StudentProfileCreation: UIViewController {
     }
     
     @IBAction func saveInputButtonPressed(_ sender: UIButton) {
+        defaultProfile.characterImage = avatar[aviCounter]
         if(!firstNameTextField.text!.isEmpty){
             defaultProfile.firstName = firstNameTextField.text!
         }

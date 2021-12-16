@@ -10,21 +10,27 @@ import UIKit
 
 class NewDayViewController: UIViewController {
 
+    @IBOutlet weak var newDayEventsTextView: UITextView!
+    
+    var morningE: String = "In the Morning: \n"
+    var lunchE: String = "During Lunch \n"
+    var afterE: String = "After School: \n"
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let gen1 = genNum()
+        let gen2 = genNum()
+        let gen3 = genNum()
+        morningE.append(contentsOf: morningEvents[gen1].eventText)
+        lunchE.append(contentsOf: lunchEvent[gen2].eventText)
+        afterE.append(contentsOf: afterSchoolEvent[gen3].eventText)
+        newDayEventsTextView.text = morningE + "\n" + lunchE + "\n" + afterE
+        
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func genNum() -> Int {
+        return Int.random(in: 0...4)
     }
-    */
 
 }
