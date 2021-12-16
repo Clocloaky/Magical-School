@@ -18,6 +18,12 @@
 		FC8C1294272FB41D00DA68B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8C1292272FB41D00DA68B1 /* LaunchScreen.storyboard */; };
 		FCCBDADE2761AD66001ACF64 /* familiarCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCBDADD2761AD66001ACF64 /* familiarCollectionViewController.swift */; };
 		FCCBDAE02761AFBC001ACF64 /* familiarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCBDADF2761AFBC001ACF64 /* familiarCollectionViewCell.swift */; };
+		FCCBDAE2276AA32F001ACF64 /* gamesceneviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCBDAE1276AA32F001ACF64 /* gamesceneviewsViewController.swift */; };
+		FCCBDAE4276AB4F7001ACF64 /* SpellBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCBDAE3276AB4F7001ACF64 /* SpellBookViewController.swift */; };
+		FCCBDAE7276AB531001ACF64 /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCBDAE6276AB531001ACF64 /* ClosetViewController.swift */; };
+		FCCBDAE9276AB56D001ACF64 /* NewDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCBDAE8276AB56D001ACF64 /* NewDayViewController.swift */; };
+		FCCBDAEB276AB58F001ACF64 /* SideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCBDAEA276AB58F001ACF64 /* SideBarViewController.swift */; };
+		FCCBDAEF276AB63E001ACF64 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCBDAEE276AB63E001ACF64 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,14 @@
 		FC8C1295272FB41D00DA68B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCCBDADD2761AD66001ACF64 /* familiarCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = familiarCollectionViewController.swift; sourceTree = "<group>"; };
 		FCCBDADF2761AFBC001ACF64 /* familiarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = familiarCollectionViewCell.swift; sourceTree = "<group>"; };
+		FCCBDAE1276AA32F001ACF64 /* gamesceneviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gamesceneviewsViewController.swift; sourceTree = "<group>"; };
+		FCCBDAE3276AB4F7001ACF64 /* SpellBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellBookViewController.swift; sourceTree = "<group>"; };
+		FCCBDAE6276AB531001ACF64 /* ClosetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
+		FCCBDAE8276AB56D001ACF64 /* NewDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDayViewController.swift; sourceTree = "<group>"; };
+		FCCBDAEA276AB58F001ACF64 /* SideBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarViewController.swift; sourceTree = "<group>"; };
+		FCCBDAEC276AB63D001ACF64 /* Magical School-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Magical School-Bridging-Header.h"; sourceTree = "<group>"; };
+		FCCBDAED276AB63E001ACF64 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../Downloads/drive-download-20211215T234652Z-001/SWRevealViewController.h"; sourceTree = "<group>"; };
+		FCCBDAEE276AB63E001ACF64 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../Downloads/drive-download-20211215T234652Z-001/SWRevealViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +80,9 @@
 		FC8C1286272FB41A00DA68B1 /* Magical School */ = {
 			isa = PBXGroup;
 			children = (
+				FCCBDAED276AB63E001ACF64 /* SWRevealViewController.h */,
+				FCCBDAEE276AB63E001ACF64 /* SWRevealViewController.m */,
+				FCCBDAE5276AB4FC001ACF64 /* game controllers */,
 				FC8C1287272FB41A00DA68B1 /* AppDelegate.swift */,
 				FC8C1289272FB41A00DA68B1 /* SceneDelegate.swift */,
 				FC8C128B272FB41A00DA68B1 /* ViewController.swift */,
@@ -78,8 +95,21 @@
 				FC8C1290272FB41D00DA68B1 /* Assets.xcassets */,
 				FC8C1292272FB41D00DA68B1 /* LaunchScreen.storyboard */,
 				FC8C1295272FB41D00DA68B1 /* Info.plist */,
+				FCCBDAEC276AB63D001ACF64 /* Magical School-Bridging-Header.h */,
 			);
 			path = "Magical School";
+			sourceTree = "<group>";
+		};
+		FCCBDAE5276AB4FC001ACF64 /* game controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FCCBDAE1276AA32F001ACF64 /* gamesceneviewsViewController.swift */,
+				FCCBDAE3276AB4F7001ACF64 /* SpellBookViewController.swift */,
+				FCCBDAE6276AB531001ACF64 /* ClosetViewController.swift */,
+				FCCBDAE8276AB56D001ACF64 /* NewDayViewController.swift */,
+				FCCBDAEA276AB58F001ACF64 /* SideBarViewController.swift */,
+			);
+			path = "game controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -114,6 +144,7 @@
 				TargetAttributes = {
 					FC8C1283272FB41A00DA68B1 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -153,9 +184,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCCBDAE9276AB56D001ACF64 /* NewDayViewController.swift in Sources */,
 				FC6CB0DD27430C890063C042 /* StudentProfileSpiceofLifeView.swift in Sources */,
 				FC6CB0DB273A05790063C042 /* StudentProfileCreationView.swift in Sources */,
+				FCCBDAE4276AB4F7001ACF64 /* SpellBookViewController.swift in Sources */,
+				FCCBDAE2276AA32F001ACF64 /* gamesceneviewsViewController.swift in Sources */,
 				FCCBDADE2761AD66001ACF64 /* familiarCollectionViewController.swift in Sources */,
+				FCCBDAE7276AB531001ACF64 /* ClosetViewController.swift in Sources */,
+				FCCBDAEF276AB63E001ACF64 /* SWRevealViewController.m in Sources */,
+				FCCBDAEB276AB58F001ACF64 /* SideBarViewController.swift in Sources */,
 				FC8C128C272FB41A00DA68B1 /* ViewController.swift in Sources */,
 				FC8C1288272FB41A00DA68B1 /* AppDelegate.swift in Sources */,
 				FC6CB0D72739E9E50063C042 /* PetFamiliarMenuView.swift in Sources */,
@@ -304,6 +341,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8U5J82Q2FD;
 				INFOPLIST_FILE = "Magical School/Info.plist";
@@ -313,6 +351,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com-irenejiang.Magical-School";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Magical School/Magical School-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -322,6 +362,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8U5J82Q2FD;
 				INFOPLIST_FILE = "Magical School/Info.plist";
@@ -331,6 +372,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com-irenejiang.Magical-School";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Magical School/Magical School-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

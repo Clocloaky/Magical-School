@@ -674,10 +674,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="111.16071428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Gamesceneviews View Controller-->
         <scene sceneID="PJS-kP-j9y">
             <objects>
-                <viewController id="N3D-kQ-a2y" sceneMemberID="viewController">
+                <viewController id="N3D-kQ-a2y" customClass="gamesceneviewsViewController" customModule="Magical_School" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tig-Is-1Ya">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -688,6 +688,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stat_box" translatesAutoresizingMaskIntoConstraints="NO" id="mdf-ju-d8Q">
                                 <rect key="frame" x="10" y="503" width="394" height="283"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sxa-Zd-hVD">
+                                <rect key="frame" x="0.0" y="444" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.72263601040000003" green="0.39473400549999998" blue="0.52036811100000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VTP-1G-eyD">
                                 <rect key="frame" x="32" y="526" width="350" height="236"/>
                                 <subviews>
@@ -697,14 +701,14 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intel:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38h-mD-jQU">
                                                 <rect key="frame" x="0.0" y="0.0" width="170" height="51.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arts:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovW-sT-oCT">
                                                 <rect key="frame" x="180" y="0.0" width="170" height="51.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -716,14 +720,14 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fitness:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adr-4N-OHQ">
                                                 <rect key="frame" x="0.0" y="0.0" width="170" height="51.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAh-aX-lcS">
                                                 <rect key="frame" x="180" y="0.0" width="170" height="51.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -735,14 +739,14 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Style:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eB-1n-3NV">
                                                 <rect key="frame" x="0.0" y="0.0" width="170" height="51.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charm:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1no-jM-m4S">
                                                 <rect key="frame" x="180" y="0.0" width="170" height="51.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -753,14 +757,14 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Money:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdY-Kb-Qcm">
                                                 <rect key="frame" x="0.0" y="0.0" width="175" height="51.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stress:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5M-lM-86Y">
                                                 <rect key="frame" x="175" y="0.0" width="175" height="51.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -800,21 +804,15 @@
                                 <rect key="frame" x="10" y="457" width="394" height="20.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gl2-EM-cga">
-                                        <rect key="frame" x="0.0" y="0.0" width="131.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFL-kL-xMO">
-                                        <rect key="frame" x="131.5" y="0.0" width="131" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="197" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B/D" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PqI-8N-h5N">
-                                        <rect key="frame" x="262.5" y="0.0" width="131.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="197" y="0.0" width="197" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -823,10 +821,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="20e-NZ-xqK" firstAttribute="bottom" secondItem="uQc-ie-PqW" secondAttribute="bottom" id="0dO-35-j7c"/>
+                            <constraint firstItem="sxa-Zd-hVD" firstAttribute="leading" secondItem="20e-NZ-xqK" secondAttribute="leading" id="48x-vi-9HD"/>
+                            <constraint firstItem="mdf-ju-d8Q" firstAttribute="top" secondItem="sxa-Zd-hVD" secondAttribute="bottom" constant="9" id="5MQ-BY-5KN"/>
                             <constraint firstItem="20e-NZ-xqK" firstAttribute="trailing" secondItem="VTP-1G-eyD" secondAttribute="trailing" constant="32" id="8uy-z3-ec8"/>
                             <constraint firstItem="VTP-1G-eyD" firstAttribute="top" secondItem="20e-NZ-xqK" secondAttribute="top" constant="526" id="AIi-LP-GTy"/>
                             <constraint firstItem="uQc-ie-PqW" firstAttribute="trailing" secondItem="20e-NZ-xqK" secondAttribute="trailing" id="FnC-sR-JuY"/>
                             <constraint firstItem="VTP-1G-eyD" firstAttribute="leading" secondItem="20e-NZ-xqK" secondAttribute="leading" constant="32" id="L9p-e1-NmQ"/>
+                            <constraint firstItem="20e-NZ-xqK" firstAttribute="trailing" secondItem="sxa-Zd-hVD" secondAttribute="trailing" id="Mdb-en-J6h"/>
                             <constraint firstItem="mdf-ju-d8Q" firstAttribute="top" secondItem="I6R-Zs-1t6" secondAttribute="bottom" constant="105" id="N2J-Z5-DGb"/>
                             <constraint firstItem="uQc-ie-PqW" firstAttribute="leading" secondItem="20e-NZ-xqK" secondAttribute="leading" id="OFA-NR-gTf"/>
                             <constraint firstItem="mdf-ju-d8Q" firstAttribute="top" secondItem="20e-NZ-xqK" secondAttribute="top" constant="503" id="RO1-7K-yvY"/>
@@ -836,6 +837,7 @@
                             <constraint firstItem="20e-NZ-xqK" firstAttribute="trailing" secondItem="4tO-1A-lPp" secondAttribute="trailing" constant="10" id="cVi-HM-5Db"/>
                             <constraint firstItem="mdf-ju-d8Q" firstAttribute="leading" secondItem="20e-NZ-xqK" secondAttribute="leading" constant="10" id="e2W-Eb-kAm"/>
                             <constraint firstItem="uQc-ie-PqW" firstAttribute="top" secondItem="20e-NZ-xqK" secondAttribute="top" id="erq-vv-K3V"/>
+                            <constraint firstItem="sxa-Zd-hVD" firstAttribute="top" secondItem="I6R-Zs-1t6" secondAttribute="bottom" constant="46" id="fpq-4d-iLD"/>
                             <constraint firstItem="I6R-Zs-1t6" firstAttribute="top" secondItem="20e-NZ-xqK" secondAttribute="top" constant="88" id="ipb-l5-rnH"/>
                             <constraint firstItem="I6R-Zs-1t6" firstAttribute="leading" secondItem="20e-NZ-xqK" secondAttribute="leading" constant="304" id="mN4-T8-SZ6"/>
                             <constraint firstItem="20e-NZ-xqK" firstAttribute="trailing" secondItem="mdf-ju-d8Q" secondAttribute="trailing" constant="10" id="n2I-a1-lRK"/>
@@ -845,6 +847,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="20e-NZ-xqK"/>
                     </view>
+                    <connections>
+                        <outlet property="artsDisplayLabel" destination="ovW-sT-oCT" id="r1d-rL-QCp"/>
+                        <outlet property="birthdateDisplayLabel" destination="PqI-8N-h5N" id="TKW-yt-RGy"/>
+                        <outlet property="charmDisplayLabel" destination="1no-jM-m4S" id="3La-RH-m5H"/>
+                        <outlet property="fitnessDisplayLabel" destination="adr-4N-OHQ" id="Q2y-ug-Mkr"/>
+                        <outlet property="intelDisplayLabel" destination="38h-mD-jQU" id="Y4c-d0-tpB"/>
+                        <outlet property="moneyDisplayLabel" destination="gdY-Kb-Qcm" id="4uI-1o-gvU"/>
+                        <outlet property="nameDisplayLabel" destination="Gl2-EM-cga" id="9ia-Jp-DMs"/>
+                        <outlet property="socialDisplayLabel" destination="XAh-aX-lcS" id="hDt-2K-Yn4"/>
+                        <outlet property="stressDisplayLabel" destination="H5M-lM-86Y" id="rSE-lf-A82"/>
+                        <outlet property="styleDisplayLabel" destination="6eB-1n-3NV" id="VYJ-Jk-6fj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bWO-Dr-DvX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
