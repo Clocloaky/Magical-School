@@ -25,7 +25,6 @@
 		FCCBDAEB276AB58F001ACF64 /* SideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCBDAEA276AB58F001ACF64 /* SideBarViewController.swift */; };
 		FCCBDAF7276B087E001ACF64 /* newDayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCBDAF6276B087E001ACF64 /* newDayModel.swift */; };
 		FCCBDAF9276B0EB0001ACF64 /* newDayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCBDAF8276B0EB0001ACF64 /* newDayData.swift */; };
-		FCCBDAFC276B13E8001ACF64 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCBDAFA276B13E8001ACF64 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,8 +48,6 @@
 		FCCBDAEA276AB58F001ACF64 /* SideBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarViewController.swift; sourceTree = "<group>"; };
 		FCCBDAF6276B087E001ACF64 /* newDayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newDayModel.swift; sourceTree = "<group>"; };
 		FCCBDAF8276B0EB0001ACF64 /* newDayData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newDayData.swift; sourceTree = "<group>"; };
-		FCCBDAFA276B13E8001ACF64 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = ../../../.Trash/SWRevealViewController.m; sourceTree = "<group>"; };
-		FCCBDAFB276B13E8001ACF64 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = ../../../.Trash/SWRevealViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +80,6 @@
 		FC8C1286272FB41A00DA68B1 /* Magical School */ = {
 			isa = PBXGroup;
 			children = (
-				FCCBDAFB276B13E8001ACF64 /* SWRevealViewController.h */,
-				FCCBDAFA276B13E8001ACF64 /* SWRevealViewController.m */,
 				FCCBDAF3276B07E2001ACF64 /* where I should have put my data lol */,
 				FCCBDAE5276AB4FC001ACF64 /* game controllers */,
 				FC8C1287272FB41A00DA68B1 /* AppDelegate.swift */,
@@ -207,7 +202,6 @@
 				FCCBDAEB276AB58F001ACF64 /* SideBarViewController.swift in Sources */,
 				FC8C128C272FB41A00DA68B1 /* ViewController.swift in Sources */,
 				FC8C1288272FB41A00DA68B1 /* AppDelegate.swift in Sources */,
-				FCCBDAFC276B13E8001ACF64 /* SWRevealViewController.m in Sources */,
 				FC6CB0D72739E9E50063C042 /* PetFamiliarMenuView.swift in Sources */,
 				FCCBDAF9276B0EB0001ACF64 /* newDayData.swift in Sources */,
 				FCCBDAE02761AFBC001ACF64 /* familiarCollectionViewCell.swift in Sources */,
@@ -365,7 +359,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com-irenejiang.Magical-School";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Magical School/Magical School-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -386,7 +379,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com-irenejiang.Magical-School";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Magical School/Magical School-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
